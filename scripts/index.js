@@ -25,7 +25,7 @@ inputField.addEventListener("keyup", (e) => {
     let inputVal = inputField.value.trim(); //Função trim remove espaços antes e depois dos valores inseridos
 
     //Variaveis para feature com timestamps
-    // var data = new Date();
+    // var data = new Date();.
     // var dataFormated = ((data.getDate() )) + "/" + ((data.getMonth() + 1)) + "/" + ((data.getFullYear()));
 
     //Se for escrito alguma coisa e apertar Enter isso vira um espaço de lista
