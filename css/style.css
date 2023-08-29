@@ -25,7 +25,7 @@ body {
     padding: 25px;
     margin: 85px auto 0;
     background-color: #FFF;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .container .logo {
