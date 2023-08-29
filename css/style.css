@@ -166,6 +166,7 @@ textarea::-webkit-scrollbar {
     right: 0;
     bottom: 0;
     opacity: 0.1;
+    cursor: pointer;
 }
 
 .made:hover {
