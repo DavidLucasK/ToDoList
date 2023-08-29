@@ -39,7 +39,7 @@ body {
 
 .container .logo:hover {
     filter: invert();
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
 }
 
 .container .input-field {
@@ -174,9 +174,22 @@ textarea::-webkit-scrollbar {
     user-select: none;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 768px) {
     .container {
         padding: 25px 10px;
+    }
+
+    .made {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        opacity: 0.1;
+    }
+    
+    .made:hover {
+        color: #FFF;
+        opacity: 1;
+        user-select: none;
     }
 }
 
