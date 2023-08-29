@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
 </head>
 <body>
-    
+    <div class="container">
+        <div class="input-field">
+            <textarea placeholder="Insira sua tarefa aqui"></textarea>
+            <i class="uil uil-notes note-icon"></i>
+        </div>
+
+        <ul class="todoLists"></ul>
+
+        <div class="pending-tasks">
+            <span style="">Você tem <span class="pending-num">0 </span> tarefas pendentes.</span>
+            <button class="clear-button">Limpar tudo</button>
+        </div>
+    </div>
+    <span class="made">Made by: DavidLucasK</span>
+
+    <!-- Javascript -->
+    <script src="scripts/index.js"></script>
 </body>
 </html>
