@@ -1,14 +1,26 @@
-//Pegando elementos da página
+//Pegando elementos da páginatasksRemaining
 const inputField = document.querySelector(".input-field textarea"),
     todoLists = document.querySelector(".todoLists"),
     pendingNum = document.querySelector(".pending-num"),
+    tasksRemaining = document.querySelector(".tasks-msg"),
     clearButton = document.querySelector(".clear-button");
+
 
     function allTasks() {
         let tasks = document.querySelectorAll(".pending");
+
+        allLists = document.querySelectorAll(".list");
+        
         pendingNum.textContent = tasks.length === 0 ? "0" : tasks.length;
+
+        if (allLists.length <= 0) {
+            tasksRemaining.innerHTML = "Voce não tem tarefas pendentes";
+        } else if (allLists.length <= 1) {
+            tasksRemaining.innerHTML = 'Voce tem ' + tasks.length + ' tarefa pendente';
+        } else {
+            tasksRemaining.innerHTML = 'Voce tem ' + tasks.length + ' tarefas pendentes';
+        }
     
-        let allLists = document.querySelectorAll(".list");
         if (allLists.length > 0) {
             todoLists.style.marginTop = "20px";
             clearButton.style.pointerEvents = "auto";
