@@ -181,7 +181,16 @@ textarea::-webkit-scrollbar {
 
 @media screen and (max-width: 768px) {
     .container {
-        padding: 25px 10px;
+        padding: 30px 30px;
+        width: 80%;
+    }
+
+    .input-field textarea {
+        font-size: 15px;
+    }
+
+    .pending-tasks span {
+        font-size: 14px;
     }
 
     .made {
