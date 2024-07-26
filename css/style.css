@@ -11,7 +11,7 @@
 
 body {
     animation: gradient 10s ease infinite;
-    background: linear-gradient(90deg, #190555, #340ea5, #7b30d0, #190555) no-repeat;
+    background: linear-gradient(90deg, #050a55, #0e18a5, #3068d0, #050a55) no-repeat;
     background-size: 200% 200%;
     height: 100vh;
     overflow: hidden;
@@ -37,11 +37,12 @@ body {
     margin-right: auto;
     margin-bottom: 21px;
     display: block;
+    filter: invert();
     transition: 0.4s ease-in-out;
 }
 
 .container .logo:hover {
-    filter: invert();
+    filter: invert(0);
     transform: rotate(-180deg);
 }
 
@@ -62,7 +63,7 @@ body {
     border: 1px solid #ccc;
 }
 .input-field textarea:focus{
-    border-color: #7b30d0;
+    border-color: #3068d0;
 }
 textarea::-webkit-scrollbar {
     display: none;
@@ -79,7 +80,7 @@ textarea::-webkit-scrollbar {
 }
 
 .input-field textarea:focus ~ .note-icon {
-    color: #7b30d0;
+    color: #3068d0;
 }
 
 
@@ -103,7 +104,7 @@ textarea::-webkit-scrollbar {
 .todoLists .list input{
     height: 16px;
     min-width: 16px;
-    accent-color: #7b30d0;
+    accent-color: #3068d0;
     pointer-events: none;
 }
 .list input:checked ~ .task {
@@ -150,7 +151,7 @@ textarea::-webkit-scrollbar {
     padding: 6px 12px;
     outline: none;
     border: none;
-    background-color: #7b30d0;
+    background-color: #3068d0;
     color: #FFF;
     font-size: 14px;
     border-radius: 4px;
@@ -161,7 +162,7 @@ textarea::-webkit-scrollbar {
 }
 
 .clear-button:hover {
-    background-color: #6b10d0;
+    background-color: #3068d0;
 }
 
 .made {
